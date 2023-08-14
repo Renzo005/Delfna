@@ -5,7 +5,12 @@ object delfina {
 	method diversion() {return diversion}
 	method agarrar(consola) {enLaMano = consola}
 	method jugar(videojuego) {diversion = diversion + videojuego.diversion() 
-			enLaMano.usar()
+			enLaMano.usar()}
+	
+	method findeGamer{
+		self.jugar(pokemon)
+		self.jugar(arkanoid)
+		self.jugar(mario)
 	}
 }
 
